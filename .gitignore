@@ -1,5 +1,6 @@
+# 🚀 Archivos y carpetas generados por Gradle
+.gradle/
 *.iml
-.gradle
 /local.properties
 /.idea/caches
 /.idea/libraries
@@ -7,9 +8,44 @@
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
+
+# 🚀 Archivos de compilación y outputs
+/build/
+*/build/
+*/out/
+*.apk
+*.aab
+*.dex
+
+# 🚀 Dependencias y binarios
+/captures/
+/*.jar
+/*.war
+/*.ear
+/.cxx/
+
+# 🚀 Configuración del entorno y claves sensibles
+*.keystore
+*.jks
+/google-services.json
+app/google-services.json
+fabric.properties
+fastlane/metadata
+fastlane/report.xml
+fastlane/screenshots
+
+# 🚀 Archivos del sistema operativo
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-local.properties
+Thumbs.db
+
+# 🚀 Archivos específicos de Jetpack Compose y tests
+/test-results/
+/.android/
+
+# 🚀 Archivos relacionados con Firebase
+/secret.gradle
+firebase-debug.log
+
+# 🚀 Variables de entorno desde gradle.properties
+gradle.properties
+

@@ -34,7 +34,6 @@ android {
                 "proguard-android-optimize.txt",
                 "proguard-rules.pro"
             )
-            //buildConfigField("String", "GOOGLE_MAPS_API_KEY", "\"${findProperty("GOOGLE_MAPS_API_KEY")}\"")
         }
 
         getByName("debug") {
@@ -45,7 +44,6 @@ android {
                 "proguard-android-optimize.txt",
                 "proguard-rules.pro"
             )
-            //buildConfigField("String", "GOOGLE_MAPS_API_KEY", "\"${findProperty("GOOGLE_MAPS_API_KEY")}\"")
         }
     }
     compileOptions {
@@ -113,9 +111,6 @@ dependencies {
     testImplementation(libs.junit.jupiter.engine)
     testImplementation(libs.androidx.core.testing)
     testImplementation(libs.turbine)
-
-    implementation("com.google.android.gms:play-services-maps:18.2.0") // O la version más reciente
-    implementation("com.google.maps.android:maps-compose:2.13.0")
 }
 
 kapt {
